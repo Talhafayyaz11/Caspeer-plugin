@@ -1,0 +1,510 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+a {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+  cursor: text;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+/* icons */
+@font-face {
+  font-family: "icomoon";
+  src: url("assets/fonts/icomoon.eot?hqcr04");
+  src: url("assets/fonts/icomoon.eot?hqcr04#iefix") format("embedded-opentype"),
+    url("assets/fonts/icomoon.ttf?hqcr04") format("truetype"),
+    url("assets/fonts/icomoon.woff?hqcr04") format("woff"),
+    url("assets/fonts/icomoon.svg?hqcr04#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-caret-up:before {
+  content: "\e901";
+}
+.icon-caret-down:before {
+  content: "\e900";
+}
+
+/**** Main CSS ****/
+* {
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 0;
+}
+html,
+div#container,
+.ms-welcome {
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.7em;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: #303030;
+  font-size: 16px;
+  height: 100%;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.7em;
+  margin-bottom: 15px;
+  color: rgba(154 154 154);
+  font-weight: 300;
+}
+
+a {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: #000;
+}
+
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+
+a:hover,
+a:focus,
+a:active {
+  outline: none !important;
+}
+
+a,
+img,
+button,
+i {
+  /*     transition: all 0.3s ease 0s; */
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong,
+cite {
+  font-weight: 900;
+}
+
+small {
+  font-size: 9px;
+  line-height: 12px;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="num"],
+input[type="password"],
+textarea,
+select {
+  background: #fff;
+  padding: 10px 0 10px 20px;
+  border-radius: 0;
+  font-size: 14px;
+  /* color: rgba(154 154 154); */
+  color: #000;
+  border: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+input::placeholder {
+  font-size: 14px;
+  color: rgba(154 154 154);
+}
+textarea {
+  resize: none;
+  height: 80px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+textarea::placeholder {
+  color: rgba(154 154 154);
+  font-weight: 700;
+}
+select {
+  color: rgba(154 154 154);
+  background-image: url(assets/images/select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 88% center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+select option {
+  color: rgba(154 154 154);
+  -webkit-appearance: menulist-button;
+}
+select option:first-child {
+  color: rgba(154 154 154);
+  -webkit-appearance: menulist-button;
+}
+.btn {
+  font-size: 14px !important;
+  color: #fff !important;
+  background: rgba(60 184 120) !important;
+  border: 0;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 0;
+  padding: 8px 40px;
+  position: relative;
+  outline: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgba(60 195 120) !important;
+}
+.btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+/*login page*/
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  height: 100%;
+}
+.casepeer-header {
+  background: rgba(60 184 120);
+  text-align: center;
+  padding: 70px 0px;
+}
+.casepeer-header .logo {
+  max-width: 150px;
+}
+.casepeer-body {
+  text-align: center;
+  padding: 25px 20px 0px 20px;
+  background: #fff;
+  margin-top: -30px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.casepeer-body h1 {
+  color: rgba(60 184 120);
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  padding: 0px 15px;
+  cursor: text;
+}
+button.btn.submit-btn {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.warning-container {
+  width: 100%;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.warning-container label {
+  padding-left: 15px;
+  font-size: 13px;
+  color: #ff0011;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container .ms-Spinner-circle {
+  border-color: rgb(60 184 120) rgb(213, 248, 219) rgb(213, 248, 219);
+}
+
+.loader-container .ms-Spinner-label {
+  color: rgb(60 184 120);
+}
+
+/*search page*/
+.casepeer-header.search-container {
+  padding: 20px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.casepeer-header.search-container .logo {
+  max-width: 95px;
+}
+.casepeer-header.search-container .logout {
+  cursor: pointer;
+  max-height: 20px;
+}
+.search-data-cotnainer {
+  max-height: 355px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.no-data-match-label {
+  color: rgb(154, 154, 154);
+  font-size: 13px;
+}
+.search-field {
+  margin-bottom: 15px;
+}
+.info-card {
+  padding: 15px 12px;
+  -webkit-box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.name-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.name-info h2 {
+  margin-bottom: 0;
+  color: rgba(60 184 120);
+  font-weight: 700;
+}
+.name-info p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-btn .btn {
+  display: block;
+  padding: 10px 30px;
+  font-size: 12px;
+  width: 50%;
+  font-weight: 400;
+}
+.card-btn .btn:hover {
+  background: rgba(13 90 84);
+}
+.open-case-btn {
+  margin-right: 10px;
+  background: rgba(13 90 84);
+}
+.card-btn .open-case-btn:hover {
+  background: rgba(60 184 120);
+}
+
+/*suggest page*/
+.casepeer-body.Suggest-case h1 {
+  color: #000;
+  text-align: left;
+  font-size: 12px;
+}
+.info-card.suggest-card {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 0px 0px 20px;
+  border-bottom: 1px solid rgba(154 154 154);
+}
+.suggest-body {
+  text-align: left;
+}
+.suggest-body h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.suggest-body p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #000;
+}
+.suggest-case-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.case-type {
+  width: 50%;
+  margin-right: 10px;
+}
+.file-number {
+  width: 50%;
+}
+
+/* responsiveness */
+
+@media (max-width: 479px) {
+  .card-btn .btn {
+    font-size: 12px !important;
+    font-weight: 600;
+    padding: 10px 10px;
+  }
+  .field .field-logo {
+    max-width: 13px;
+  }
+}
